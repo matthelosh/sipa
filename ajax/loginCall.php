@@ -12,7 +12,7 @@ if(mysqli_num_rows($run) > 0 ){
   // echo json_encode($result);
   echo "ok";
   $_SESSION['user'] = $result['username'];
-  $_SESSION['realname'] = $result['realname'];
+  // $_SESSION['realname'] = $result['real_name'];
 } else {
   echo '0 result';
 }

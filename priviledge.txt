@@ -1,0 +1,6 @@
+User : {
+  username: 'kasir',
+  password: 'p4md3s123',
+  realname: 'Abdur Rohim',
+  level: 'operator'
+}

@@ -14,11 +14,35 @@
             case "pelanggan":
               include "pages/pelanggan.php";
             break;
+            case "editPelanggan":
+              include "pages/edit.pelanggan.php";
+            break;
+            case "settings":
+              include "pages/settings.php";
+            break;
+            case "backup-db":
+              include "pages/backup.db.php";
+            break;
             case "entry-meter":
               include "pages/entry-meter.php";
             break;
             case "pembayaran":
               include "pages/payment.php";
+            break;
+            case "tunggakan":
+              include "pages/tunggakan.php";
+            break;
+            case "cetakStruk":
+              include "pages/cetak.struk.php";
+            break;
+            case "strukBulan":
+              include "pages/cetak.strukBulan.php";
+            break;
+            case "payStory":
+              include "pages/data.bayar.php";
+            break;
+            case "rekap":
+              include "pages/rekap.bulan.php";
             break;
             case "laporan":
               include "pages/report.php";

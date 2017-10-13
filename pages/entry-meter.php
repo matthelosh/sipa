@@ -64,7 +64,7 @@
     </div>
   </div>
   <div class="col-sm-6">
-    <div class="alert bg-maroon alert-dismissible info-check">
+    <div class="alert bg-teal alert-dismissible info-check">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
       <h4><i class="icon fa fa-exclamation-circle"></i> Info!</h4>
       <p class="info-content"></p>

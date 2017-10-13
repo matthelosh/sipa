@@ -15,11 +15,22 @@ $(document).ready(function() {
         method: 'POST',
         url: 'ajax/loginCall.php',
         data: data,
+        beforeSend: function(){
+
+            $("#inpo").html('Mohon Tunggu. Username sedang diperiksa');
+
+
+
+        },
         success: function(msg){
-          setTimeout(function(){
-            $("#inpo").txt("Anda akan masuk sebentar lagi. Mohon Tunggu..");
-          }, 2000);
-          window.location.href="index.php";
+          if(msg == "ok") {
+            $("#inpo").html('Monggo, Silahkan Masuk!');
+            window.location.href="index.php";
+          } else {
+            $("#inpo").html('Username atau Password tidak sesuai. Mohon dicek kembali');
+            $("#username").focus();
+          }
+
         }
       })
     }

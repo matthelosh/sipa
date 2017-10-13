@@ -27,7 +27,7 @@
                 <!-- <label for="norek" class="control-label">No. Rekening/ID Pelanggan</label> -->
                 <div class="input-group has-addon">
                   <input class="form-control" id="norek-bayar" placeholder="Nomor Rekening" name="norek" type="text">
-                  <span class="input-group-addon" style="cursor:pointer" title="Cek Pembayaran" id="btn-cek-bayar"><i class="fa fa-binoculars" ></i></span>
+                  <span class="input-group-addon" style="cursor:pointer" title="Cek Tagihan" id="btn-cek-bayar"><i class="fa fa-binoculars" ></i></span>
                 </div>
               </div>
             </form>
@@ -53,12 +53,23 @@
           <h3 class="box-title">Informasi Tagihan</h3>
         </div>
         <div class="box-body">
-          <p>Jenis Langganan: <span id="jenis-langganan"></span> - <span id="harga-meter"></span></p>
+          <div class="hidden" id="idBayar"></div>
+          <p>Status Pembayaran: <span id="status"></span></p>
           <p>Meter Bulan Lalu: <span id="meter-lalu"></span></p>
           <p>Meter Bulan Sekarang: <span id="meter-sekarang"></span></p>
-          <p>Meter Lebih: <span id="meter-lebih"></span></p>
-          <p>Beban Dasar: <span id="beban-dasar"></span></p>
-          <p>Jumlah Tagihan: <strong><span class="jml-tagihan"></span></strong></p>
+          <p>Pemakaian Bulan Sekarang: <span id="jml-meter"></span></p>
+          <p>Tunggakan Bulan Sebelumnya: <span id="tunggakan" style="color:red"></span> <a href="#" id="gotoPay" class="btn btn-flat bg-maroon btn-sm" style="display:none;">Bayar?</a></p>
+          <p>Jumlah Tagihan: <strong><span id="jml-tagihan"></span></strong></p>
+        </div>
+        <div class="box-footer">
+          <button class="btn btn-primary btn-flat" id="save-pay">
+            <span class="fa fa-check"></span> Bayar
+          </button>
+          <input type="hidden" name="mode" value="single">
+          <input type="hidden" name="norek-print" value="">
+          <button class="btn btn-info btn-flat cetakStruk" disabled>
+            <span class="fa fa-print"></span> Cetak Struk
+          </button>
         </div>
       </div>
 
@@ -69,12 +80,7 @@
 
 <div class="row">
   <div class="container">
-    <button class="btn btn-primary btn-lg btn-flat">
-      <span class="fa fa-check"></span> Bayar
-    </button>
-    <button class="btn btn-info btn-lg btn-flat">
-      <span class="fa fa-print"></span> Cetak Struk
-    </button>
+
   </div>
 
 </div>

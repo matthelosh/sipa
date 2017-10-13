@@ -41,12 +41,18 @@
 
 <div class="row">
   <div class="show">
-
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="callout bg-maroon" style="margin-top: 50px; border-left: 10px solid #f66096">
+        <h4><i class="fa fa-info-circle"></i> Info:</h4>
+        <p>- Klik tombol lihat tombol pelanggan untuk menampilkan seluruh data pelanggan.</p>
+        <p>- Untuk mencari pelanggan, gunakan menu pencarian dengan mengetikkan nama di textbox. Kemudian klik tanda kaca pembesar, atau tekan enter di keyboard.</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="modal modal-primary fade" id="addCustomer">
-  <div class="modal-dialog">
+<div class="modal modal-default modal-info fade" id="addCustomer">
+  <div class="modal-dialog bg-teal">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -58,7 +64,7 @@
           <input type="hidden" name="mode" value="add">
           <div class="form-group">
             <label for="norek">No. Rekening:</label>
-            <input type="text" class="form-control" name="norek" value="" placeholder="No. Rekening">
+            <input type="text" class="form-control" name="norek" value="" placeholder="No. Rekening" id="norek">
           </div>
           <div class="form-group">
             <label for="nama">Nama:</label>
